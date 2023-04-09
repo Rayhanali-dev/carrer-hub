@@ -1,0 +1,68 @@
+[
+    {
+      "id": 1,
+      "job_title": "Software Engineer",
+      "company_name": "XYZ Tech",
+      "company_img": "https://via.placeholder.com/150",
+      "location": "San Francisco, CA",
+      "salary": 100000.00,
+      "employment_type": "Full-time",
+      "requirements": ["Bachelor's degree in Computer Science or related field", "3+ years of experience in web development", "Strong proficiency in JavaScript and React"],
+      "contact_information": "jobs@xyztech.com"
+    },
+    {
+      "id": 2,
+      "job_title": "UX Designer",
+      "company_name": "PQR Designs",
+      "company_img": "https://via.placeholder.com/150",
+      "location": "Seattle, WA",
+      "salary": 85000.00,
+      "employment_type": "Full-time",
+      "requirements": ["Bachelor's degree in Design or related field", "2+ years of experience in UX/UI design", "Proficiency in Sketch and InVision"],
+      "contact_information": "jobs@pqrdesigns.com"
+    },
+    {
+      "id": 3,
+      "job_title": "Data Analyst",
+      "company_name": "LMN Analytics",
+      "company_img": "https://via.placeholder.com/150",
+      "location": "Chicago, IL",
+      "salary": 75000.00,
+      "employment_type": "Part-time",
+      "requirements": ["Bachelor's degree in Statistics or related field", "1+ years of experience in data analysis", "Proficiency in Python and SQL"],
+      "contact_information": "jobs@lmnanalytics.com"
+    },
+    {
+      "id": 4,
+      "job_title": "Marketing Manager",
+      "company_name": "ABC Marketing",
+      "company_img": "https://via.placeholder.com/150",
+      "location": "New York, NY",
+      "salary": 90000.00,
+      "employment_type": "Full-time",
+      "requirements": ["Bachelor's degree in Marketing or related field", "5+ years of experience in marketing", "Strong communication and leadership skills"],
+      "contact_information": "jobs@abcmarketing.com"
+    },
+    {
+      "id": 5,
+      "job_title": "Accountant",
+      "company_name": "DEF Finance",
+      "company_img": "https://via.placeholder.com/150",
+      "location": "Los Angeles, CA",
+      "salary": 80000.00,
+      "employment_type": "Full-time",
+      "requirements": ["Bachelor's degree in Accounting or related field", "3+ years of experience in financial accounting", "Proficiency in Excel and QuickBooks"],
+      "contact_information": "jobs@deffinance.com"
+    },
+    {
+      "id": 6,
+      "job_title": "Graphic Designer",
+      "company_name": "GHI Creative",
+      "company_img": "https://via.placeholder.com/150",
+      "location": "Miami, FL",
+      "salary": 60000.00,
+      "employment_type": "Remote",
+      "requirements": ["Bachelor's degree in Design or related field", "2+ years of experience in graphic design", "Proficiency in Adobe Creative Suite"],
+      "contact_information": "jobs@ghicreative.com"
+    }
+]
