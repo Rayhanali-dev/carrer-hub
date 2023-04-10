@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Category = ({category}) => {
-    console.log(category);
     const {img, title, job} = category
     return (
         <div className='bg-[#b8bfeb] p-4'>

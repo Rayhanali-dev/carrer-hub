@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Lottie from "lottie-react";
 import groovyWalkAnimation from "../../../public/41389-interview-get-ready-to-work-job-recruitment-isometric-hiring-process.json";
 import { useLoaderData } from 'react-router-dom';
 import Category from '../Category/Category';
+import Job from '../Job/Job';
 
 const Home = () => {
     const categoryList = useLoaderData();
-    // const jobPosting = useLoaderData();
-    console.log(categoryList);
+    const [jobs, setJobs] = useState([])
+    const [show, setShow] = useState(true)
+    useEffect(() => {
+        fetch('job-posting.json')
+            .then(res => res.json())
+            .then(data => setJobs(data))
+    }, [])
+
+
     return (
         <div>
             {/* banner part start */}
@@ -37,8 +45,27 @@ const Home = () => {
                     }
                 </div>
             </section>
-
             {/* job category part end */}
+
+            {/* feature jobs part start */}
+
+            <section className='max-w-7xl mx-auto'>
+                <div>
+                    <h2 className='text-center text-3xl font-bold mt-12 mb-5'>Featured Jobs</h2>
+                    <p className='text-center text-[20px] mb-10 text-[#757575]'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                </div>
+                <div className='grid grid-cols-2 gap-6 mb-14'>
+                    {
+                        show ? jobs.slice(0, 4).map(job => <Job job={job} key={job.id}></Job>) : jobs.map(job => <Job job={job} key={job.id}></Job>)
+                    }
+                </div>
+                <div className='my-10 text-center'>
+                    {
+                        show ? <button onClick={() => setShow(!show)} className='btn btn-primary'>See More</button> : <button onClick={() => setShow(!show)} className='btn btn-primary'>See Less</button>
+                    }
+                </div>
+            </section>
+            {/* feature jobs part end */}
         </div>
     );
 };
