@@ -15,7 +15,7 @@ const Header = () => {
                         open ? <Bars3Icon className='w-6 h-6'></Bars3Icon> : <XMarkIcon className='w-6 h-6'></XMarkIcon>
                     }
                 </div>
-                <div className={` flex flex-col md:flex-row md:gap-3 p-8 md:p-0 bg-slate-300 md:bg-transparent absolute md:static ${open ? '-top-72 right-0' : 'top-20 right-5'}`}>
+                <div className={` flex flex-col md:flex-row md:gap-4 gap-3 p-8 lg:p-0 bg-slate-300 md:bg-transparent duration-500 absolute md:static ${open ? '-top-72 right-5' : 'top-20 right-5'}`}>
                     <Link className="text-black text-[18px] font-medium" to={`/`}>Home</Link>
                     <Link className="text-black text-[18px] font-medium" to={`/statistics`}>Statistics</Link>
                     <Link className="text-black text-[18px] font-medium" to={`/apply`}>Applied Jobs</Link>

@@ -41,25 +41,30 @@ const Statistics = () => {
         }
     ]
     return (
-        <div className='mx-auto max-w-7xl'>
-            <AreaChart
-                width={1320}
-                height={400}
-                data={data}
-                margin={{
-                    top: 10,
-                    right: 30,
-                    left: 0,
-                    bottom: 0,
-                }}
-            >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="assignment_name" />
-                <YAxis dataKey="assignment_marks" />
-                <Tooltip />
-                <Area type="monotone" dataKey="assignment_name" stroke="#8884d8" fill="#8884d8" />
-                <Area type="monotone" dataKey="assignment_marks" stroke="#8884d8" fill="#8884d8" />
-            </AreaChart>
+        <div>
+            <div className='bg-slate-200'>
+                <h4 className='text-4xl font-bold text-center py-20'>Statistics</h4>
+            </div>
+            <div className='mx-auto max-w-7xl'>
+                <AreaChart
+                    width={1320}
+                    height={400}
+                    data={data}
+                    margin={{
+                        top: 10,
+                        right: 30,
+                        left: 0,
+                        bottom: 0,
+                    }}
+                >
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="assignment_name" />
+                    <YAxis dataKey="assignment_marks" />
+                    <Tooltip />
+                    <Area type="monotone" dataKey="assignment_name" stroke="#8884d8" fill="#8884d8" />
+                    <Area type="monotone" dataKey="assignment_marks" stroke="#8884d8" fill="#8884d8" />
+                </AreaChart>
+            </div>
         </div>
     );
 };
