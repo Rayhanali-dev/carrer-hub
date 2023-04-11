@@ -6,15 +6,8 @@ const AppliedJobs = ({ jobs }) => {
     const { job_title, company_name, company_img, location, salary, employment_time, employment_type, id } = jobs
     return (
         <div>
-            <div className='bg-slate-200'>
-                <h4 className='text-4xl font-bold text-center py-20'>Applied Jobs</h4>
-            </div>
-            <div className='max-w-7xl mx-auto text-right mt-12'>
-                <button className='btn btn-outline mr-7'>Remote</button>
-                <button className='btn btn-outline'>Onsite</button>
-            </div>
             <div className='max-w-7xl mx-auto'>
-                <div className='flex justify-between items-center border border-gray-400 p-6 my-10'>
+                <div className='flex justify-between items-center border rounded-lg border-gray-400 p-6 my-10'>
                     <div className='flex gap-4 items-center'>
                         <div className='w-48 h-16'>
                             <img className='w-full h-full' src={company_img} alt="company-img" />
