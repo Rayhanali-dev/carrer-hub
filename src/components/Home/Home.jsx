@@ -1,16 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import Lottie from "lottie-react";
-import groovyWalkAnimation from "../../../public/41389-interview-get-ready-to-work-job-recruitment-isometric-hiring-process.json";
-import { useLoaderData } from 'react-router-dom';
-import Category from '../Category/Category';
 import Job from '../Job/Job';
+import Lottie from "lottie-react";
+import groovyWalkAnimation from "./../../../public/lottie.json";
+import Category from './../Category/Category';
 
 const Home = () => {
-    const categoryList = useLoaderData();
     const [jobs, setJobs] = useState([])
     const [show, setShow] = useState(true)
+    const [categoryList, setCategoryList] = useState([])
+
+    useEffect( () => {
+        fetch('category.json')
+        .then(res => res.json())
+        .then(data => setCategoryList(data))
+    }, [] )
+
     useEffect(() => {
-        fetch('job-posting.json')
+        fetch('jobPosting.json')
             .then(res => res.json())
             .then(data => setJobs(data))
     }, [])
@@ -27,13 +33,13 @@ const Home = () => {
                         <button className="btn btn-active btn-secondary mb-20">Get Started</button>
                     </div>
                     <div className='w-2/4 text-right'>
-                        <Lottie animationData={groovyWalkAnimation} loop={true} />;
+                        <Lottie animationData={groovyWalkAnimation}  loop={true} />
                     </div>
                 </div>
             </div>
             {/* banner part end */}
-            {/* job category part start */}
 
+            {/* job category part start */}
             <section className='max-w-7xl mx-auto'>
                 <div>
                     <h2 className='text-center text-3xl font-bold mt-12 mb-5'>Job Category List</h2>
@@ -41,7 +47,7 @@ const Home = () => {
                 </div>
                 <div className='grid grid-cols-4 gap-6 mb-14'>
                     {
-                        categoryList.map(category => <Category category={category} key={category.title}></Category>)
+                        categoryList.map(category => <Category category={category} key={category.id}></Category>)
                     }
                 </div>
             </section>
