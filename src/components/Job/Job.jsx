@@ -12,8 +12,8 @@ const Job = ({ job }) => {
             <button className="btn btn-outline mr-5">{employment_type}</button>
             <button className="btn btn-outline">{employment_time}</button>
             <div className='my-5 flex items-center gap-10'>
-                <Link className='flex items-center text-lg'><MapPinIcon className='w-6 h-6 text-[#d57575]'></MapPinIcon>{location}</Link>
-                <Link className='flex items-center text-lg'><CurrencyDollarIcon className='w-6 h-6 text-[#d57575]'></CurrencyDollarIcon> {salary}</Link>
+                <Link className='flex items-center text-sm lg:text-lg'><MapPinIcon className='w-6 h-6 text-[#d57575]'></MapPinIcon>{location}</Link>
+                <Link className='flex items-center text-sm lg:text-lg'><CurrencyDollarIcon className='w-6 h-6 text-[#d57575]'></CurrencyDollarIcon> {salary}</Link>
             </div>
             <Link to={`job/${id}`}><button className="btn btn-active btn-primary mr-5">View Details</button></Link>
         </div>

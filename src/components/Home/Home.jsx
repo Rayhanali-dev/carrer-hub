@@ -23,13 +23,13 @@ const Home = () => {
 
 
     return (
-        <div>
+        <div className='px-5 lg:px-0'>
             {/* banner part start */}
             <div className='bg-slate-200'>
                 <div className='max-w-7xl mx-auto md:flex items-center justify-between'>
-                    <div className='md:w-2/4'>
-                        <h3 className='text-7xl font-bold mb-8 pr-32'>One Step Closer To Your <span className='text-[#7E90FE]'>Dream Job</span></h3>
-                        <p className='text-[#757575] pr-40 mb-5 text-[18px]'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
+                    <div className='md:w-2/4 text-center md:text-left'>
+                        <h3 className='text-3xl md:text-7xl font-bold mb-8 md:pr-32'>One Step Closer To Your <span className='text-[#7E90FE]'>Dream Job</span></h3>
+                        <p className='text-[#757575] md:pr-40 mb-5 text-[18px]'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
                         <button className="btn btn-active btn-secondary mb-20">Get Started</button>
                     </div>
                     <div className='md:w-2/4 text-right'>
