@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 import { CurrencyDollarIcon, BriefcaseIcon, PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/solid'
+import { addToDb } from '../../../utilities/fakedb';
 
 const ViewDetails = () => {
     const data = useLoaderData()
@@ -10,8 +11,12 @@ const ViewDetails = () => {
         const singleData = data.find(dt => dt.id == detailsId)
         setDetails(singleData)
     }, [])
-    console.log(details);
-    const { description, job_responsibility, requirements, experience, job_title, salary, contact_information, location, phone } = details
+
+    const handleAddToDB = (id) => {
+        addToDb(id)
+    }
+
+    const { description, job_responsibility, requirements, experience, job_title, salary, contact_information, location, phone, id } = details
     return (
         <div className='max-w-7xl mx-auto grid grid-cols-2 gap-7 mt-32'>
             <div>
@@ -51,7 +56,7 @@ const ViewDetails = () => {
                     </h3>
                 </div>
                 <div>
-                    <Link to={`/apply`}><button className='w-full font-bold text-white bg-blue-500 mt-5 p-3'>Apply Now</button></Link>
+                    <button onClick={() => handleAddToDB(id)} className='w-full font-bold text-white bg-blue-500 mt-5 p-3'>Apply Now</button>
                 </div>
             </div>
         </div>

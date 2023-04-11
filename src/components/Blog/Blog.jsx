@@ -6,37 +6,38 @@ const Blog = () => {
             <div className="collapse collapse-arrow mb-8">
                 <input type="checkbox" className="peer" />
                 <div className="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-                    Click me to show/hide content
+                    when should i use context api?
                 </div>
                 <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-                    <p>hello</p>
+                    <p>when some data needs to be accessible by many components at different nesting levels</p>
                 </div>
             </div>
             <div className="collapse collapse-arrow mb-8">
                 <input type="checkbox" className="peer" />
                 <div className="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-                    Click me to show/hide content
+                    What is custom hooks?
                 </div>
                 <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-                    <p>hello</p>
+                    <p>A custom Hook is a JavaScript function whose name starts with ”use” and that may call other Hooks.</p>
                 </div>
             </div>
             <div className="collapse collapse-arrow mb-8">
                 <input type="checkbox" className="peer" />
                 <div className="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-                    Click me to show/hide content
+                    What is useRef?
                 </div>
                 <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-                    <p>hello</p>
+                    <p>The useRef Hook allows you to persist values between renders.
+                        It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.</p>
                 </div>
             </div>
             <div className="collapse collapse-arrow mb-8">
                 <input type="checkbox" className="peer" />
                 <div className="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-                    Click me to show/hide content
+                    What is useMemo?
                 </div>
                 <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-                    <p>hello</p>
+                    <p>useMemo() is a function that returns a memoized value of a passed in resource-intensive function.</p>
                 </div>
             </div>
         </div>
