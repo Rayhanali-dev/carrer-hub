@@ -2,7 +2,6 @@ import React from 'react';
 import { CurrencyDollarIcon, MapPinIcon } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom';
 const AppliedJobs = ({ jobs }) => {
-    console.log(jobs);
     const { job_title, company_name, company_img, location, salary, employment_time, employment_type, id } = jobs
     return (
         <div>
