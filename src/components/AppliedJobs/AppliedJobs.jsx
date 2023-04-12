@@ -6,8 +6,8 @@ const AppliedJobs = ({ jobs }) => {
     return (
         <div>
             <div className='max-w-7xl mx-auto'>
-                <div className='flex justify-between items-center border rounded-lg border-gray-400 p-6 my-10'>
-                    <div className='flex gap-4 items-center'>
+                <div className='flex lg:justify-between flex-col md:flex-row items-center border rounded-lg border-gray-400 p-6 my-10'>
+                    <div className='flex gap-4 flex-col md:flex-row items-center'>
                         <div className='w-48 h-16'>
                             <img className='w-full h-full' src={company_img} alt="company-img" />
                         </div>

@@ -18,7 +18,7 @@ const ViewDetails = () => {
 
     const { description, job_responsibility, requirements, experience, job_title, salary, contact_information, location, phone, id } = details
     return (
-        <div className='max-w-7xl mx-auto grid grid-cols-2 gap-7 mt-32'>
+        <div className='max-w-7xl mx-auto grid md:grid-cols-2 gap-7 mt-32'>
             <div>
                 <h4 className='text-[18px] mb-4'><span className='font-bold text-lg'>Job Description: </span>{description}</h4>
                 <h4 className='text-[18px] mb-4'><span className='font-bold text-lg'>Job Responsibility: </span>{job_responsibility}</h4>

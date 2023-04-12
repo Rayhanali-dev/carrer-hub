@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div>
+        <div className='mx-5 lg:mx-0'>
             <div className='bg-slate-200'>
                 <h4 className='text-4xl font-bold text-center py-20'>Blog</h4>
             </div>
