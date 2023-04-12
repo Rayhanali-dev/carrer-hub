@@ -46,8 +46,8 @@ const Statistics = () => {
                 <h4 className='text-4xl font-bold text-center py-20'>Statistics</h4>
             </div>
             <div className='mx-auto max-w-7xl'>
-                <div className='w-full overflow-x-scroll lg:overflow-x-hidden'>
-                    <AreaChart width={1320} height={400} data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0, }}>
+                <div className='w-full overflow-x-scroll md:overflow-hidden'>
+                    <AreaChart width={1240} height={400} data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0, }}>
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="assignment_name" />
                         <YAxis dataKey="assignment_marks" />
