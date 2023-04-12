@@ -22,7 +22,6 @@ const Apply = () => {
     },[data])
 
     const filterData = (type) => {
-        console.log('hello');
         if(type == 'Remote') {
            const filterjob = applyJob.filter(data => data.employment_type == "Remote");
            setShowApplied(filterjob);
